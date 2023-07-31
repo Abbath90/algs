@@ -1,5 +1,6 @@
 stantions, job, home = map(lambda x: int(x), input().split(' '))
 
+
 def validation_data(stantions, job, home):
     if (
             (0 < stantions <= 100)
