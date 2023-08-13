@@ -6,5 +6,6 @@ def max_distance():
     cur_house = -1
     cur_shop = -1
     for i, j in enumerate(l):
-        if j == 
+        pass
+
 
