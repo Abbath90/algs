@@ -1,10 +1,11 @@
 n = int(input())
-l = list(map(lambda x: int(x), input().split()))
+l = map(lambda x: int(x), input().split())
 
-prefix_sum_l = [0]*(n + 1)
+ans = -10**9
+cur_max = 0
 
-for i in range(1, n + 1):
-    prefix_sum_l[i] = prefix_sum_l[i - 1] + l[i - 1]
+for i in l:
+    cur_max = max(cur_max + i, i)
+    ans = max(ans, cur_max)
 
-
-print(prefix_sum_l)
+print(ans)
